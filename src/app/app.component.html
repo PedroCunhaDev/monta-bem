@@ -1,2 +1,11 @@
-<h1 class="text-primary">{{ title }}</h1>
-<button type="button" class="btn btn-primary">Primary</button>
+<div id="sidePanel" class="text-center d-flex flex-column">
+  <img alt="logo" src="../assets/logo.svg" class="mt-4 mx-4">
+
+  <div class="list-group mt-5" id="navItems">
+    <ul *ngFor="let item of navItems" class="list-group-item bg-transparent border-0 fs-5 p-0 text-start ps-4">{{ item.title }}</ul>
+  </div>
+
+  <div class="list-group mt-auto" id="navItemsBottom">
+    <ul *ngFor="let item of navItemsBottom" class="list-group-item bg-transparent border-0 fs-5 p-0 text-start ps-4">{{ item.title }}</ul>
+  </div>
+</div>
